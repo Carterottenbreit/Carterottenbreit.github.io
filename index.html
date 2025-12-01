@@ -1,10 +1,95 @@
 <!doctype html>
-<html>
-<head>
-  <title>Carter github site</title>
-</head>
-<body>
-  <h2>Hello from Carter</h2>
-  <div>I will add some content here for lab 7 later</div>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta  
+            name="viewport" 
+            content="width=device-width, initial-scale=1"
+         />
+        <title>Bathtub Race Signup</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>Bathtub Race Signup</h1>
+        <p>
+         Please complete the required fields and submit your registration.
+        </p>
+
+        <div class="card">
+            <form method="POST"
+            action="https://form-submit-weld.vercel.app/api/process-form">
+
+                <fieldset class="full-row event-box">
+                <legend>Select Event </legend>
+                    <label class="radio"><input type="radio" name="event" value="Stock" required> Stock</label>
+                    <label class="radio"><input type="radio" name="event" value="Modified"> Modified</label>
+                </fieldset>
+
+                <label for="lastName">Last Name </label>
+                <input 
+                     id="lastName" 
+                     name="lastName" 
+                     type="text" 
+                     required
+                />
+
+                <label for="firstName">First Name </label>
+                <input 
+                    id="firstName" 
+                    name="firstName" 
+                    type="text" 
+                    required
+                />
+
+                <label for="address">Address</label>
+                <input 
+                    id="address" 
+                     name="address" 
+                    type="text"
+                />
+
+                <label for="city">City</label>
+                <input id="city" name="city" type="text">
+
+                <label for="province">Province</label>
+                <select id="province" name="province">
+                    <option value="">Select…</option>
+                <option>BC</option><option>AB</option><option>SK</option><option>MB</option>
+                    <option>ON</option><option>QC</option><option>NB</option><option>NS</option>
+                    <option>PE</option><option>NL</option><option>YT</option><option>NT</option><option>NU</option>
+                </select>
+
+                <label for="postal">Postal Code/Zip</label>
+                <input id="postal" name="postal" type="text" autocomplete="postal-code">
+
+                <label for="country">Country</label>
+                <input id="country" name="country" type="text" autocomplete="country-name">
+
+                <label for="email">Email </label>
+                <input id="email" name="email" type="email" required autocomplete="email">
+
+                <label for="dob">Date of Birth </label>
+                <input id="dob" name="dob" type="date" required>
+
+                <label for="boatName">Boat Name</label>
+                <input id="boatName" name="boatName" type="text">
+
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments" cols="40" rows="3"></textarea>
+
+                    <label class="full-row checkbox">
+                    <input type="checkbox" name="waiver" required>
+                    I have read and agree to the waiver 
+                    </label>
+
+                <div class="full-row center">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+            <img src="istockphoto-1350638793-612x612.jpg" width="300">
+
+        </div>
+    </body>
 </html>
+
