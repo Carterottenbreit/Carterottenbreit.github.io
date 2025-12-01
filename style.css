@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family:
+        system-ui, 
+        -apple-system, 
+        Segoe UI, 
+        Roboto, 
+        Helvetica, 
+        Arial,
+      "Apple Color Emoji", 
+      "Segoe UI Emoji";
+    color: #111827;
+    background: #8fdbff;
+    padding: 24px;
+  }
+  
+  h1 {
+    margin: 0 0 16px;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 20px 10px;
+    width: 310px;
+    height: 60px;
+    color: #cfd6e4;
+    background-image:url(My_ITAS_Logo_1169x7321.jpg);
+  }
+  
+  p {
+    margin: 0 0 16px;
+    color: #4b5563;
+  }
+  
+  /* Card styling to match the original grid items */
+  .card {
+    background: #f5f7fb;
+    border: 1px solid #e6eaf2;
+    border-radius: 10px;
+    padding: 18px;
+    width: 1500px;
+    max-width: 100%;
+  }
+  
+  /* Form laid out as a 2-column grid: 1 part label, 2 parts input */
+  form {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* 1 part for label, 2 parts for input */
+    gap: 1em; /* space between grid items */                    
+  }
+  
+  label {
+    font-weight: 600;
+    align-self: start; /* vertically center labels next to inputs */
+  }
+  
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  select {
+    width: 25%;
+    padding: 10px 12px;
+    border: 6px solid #cfd6e4;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+ 
+  textarea {
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 60px 12px;
+    border: 6px solid #cfd6e4;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: vertical;
+  }
+  
+ 
+  fieldset {
+    border: 6px solid #cfd6e4;
+    border-radius: 10px;
+    padding: 10px 12px;
+  }
+  legend { font-weight: 700; padding: 0 6px; }
+  fieldset label { font-weight: 600; margin-right: 24px; }
+  
+  /* Make the submit row span both columns */
+  .full-row { grid-column: 1 / -1; }
+  .center { text-align: center; }
+  
+  button[type="submit"],
+  input[type="submit"] {
+    padding: 10px 14px;
+    border: 1px solid #1f6feb;
+    background: #2f81f7;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  button[type="submit"]:hover,
+  input[type="submit"]:hover {
+    filter: brightness(0.95);
+  }
+  /* Optional: stack labels above inputs on narrow screens */
+  @media (max-width: 520px) {
+    form { 
+        grid-template-columns: 1fr; /* labels above inputs */
+    }
+    label { 
+        align-self: start; 
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select,
+    textarea { 
+        width: 100%; 
+    }
+  }
+  
