@@ -1,96 +1,213 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta  
-            name="viewport" 
-            content="width=device-width, initial-scale=1"
-         />
-        <title>Bathtub Race Signup</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wizard-Friendly Workplace Guide</title>
 
-    <body>
-        <h1>Bathtub Race Signup</h1>
-        <p>
-         Please complete the required fields and submit your registration.
-        </p>
+  <meta name="description" content="A lighthearted guide to working with wizards in the modern workplace: etiquette, safety, and HR-friendly spell management." />
 
-        <div class="card">
-            <form method="POST"
-            action="https://form-submit-weld.vercel.app/api/process-form">
+  <link rel="icon" href="favicon-16x16.png" type="image/x-icon" />
 
-                <fieldset class="full-row event-box">
-                <legend>Select Event </legend>
-                    <label class="radio"><input type="radio" name="event" value="Stock" required> Stock</label>
-                    <label class="radio"><input type="radio" name="event" value="Modified"> Modified</label>
-                </fieldset>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-                <label for="lastName">Last Name </label>
-                <input 
-                     id="lastName" 
-                     name="lastName" 
-                     type="text" 
-                     required
-                />
+  <style>
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(8px);
+      animation: fadeInUp 0.5s ease-out forwards;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
 
-                <label for="firstName">First Name </label>
-                <input 
-                    id="firstName" 
-                    name="firstName" 
-                    type="text" 
-                    required
-                />
+<body class="bg-slate-950 text-slate-100 font-sans">
+  <header class="bg-slate-900 border-b border-slate-800 sticky top-0 z-20">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+      <h1 class="text-lg font-semibold">
+        Wizard-Friendly Workplace Guide
+      </h1>
+      <nav aria-label="Main navigation">
+        <ul class="flex gap-4 text-sm">
+          <li><a href="#intro" class="hover:text-indigo-300">Intro</a></li>
+          <li><a href="#experience" class="hover:text-indigo-300">Experience</a></li>
+          <li><a href="#consulting" class="hover:text-indigo-300">Consulting</a></li>
+          <li><a href="#guide" class="hover:text-indigo-300">Survival Guide</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-                <label for="address">Address</label>
-                <input 
-                    id="address" 
-                     name="address" 
-                    type="text"
-                />
+  <main class="max-w-4xl mx-auto px-4 py-8 space-y-12">
 
-                <label for="city">City</label>
-                <input id="city" name="city" type="text">
+    <section id="intro" class="fade-in">
+      <h2 class="text-2xl font-bold mb-2">
+        Welcome to the Wizard-Friendly Workplace
+      </h2>
+      <p class="text-slate-300 mb-2">
+        This guide will demonstrate how to properly handle with Wizards in the workplace.
+      </p>
+    </section>
 
-                <label for="province">Province</label>
-                <select id="province" name="province">
-                    <option value="">Select…</option>
-                <option>BC</option><option>AB</option><option>SK</option><option>MB</option>
-                    <option>ON</option><option>QC</option><option>NB</option><option>NS</option>
-                    <option>PE</option><option>NL</option><option>YT</option><option>NT</option><option>NU</option>
-                </select>
+    <section id="experience" class="fade-in">
+      <h2 class="text-xl font-bold mb-3">
+        My Experience Working With Wizards
+      </h2>
 
-                <label for="postal">Postal Code/Zip</label>
-                <input id="postal" name="postal" type="text" autocomplete="postal-code">
+      <div class="grid md:grid-cols-2 gap-6 items-start">
+        <div class="space-y-4">
 
-                <label for="country">Country</label>
-                <input id="country" name="country" type="text" autocomplete="country-name">
+          <img
+            src="wizard1.jpg"
+            alt=""
+            class="w-full rounded-lg border border-slate-700 object-cover aspect-video bg-slate-800"
+          />
 
-                <label for="email">Email </label>
-                <input id="email" name="email" type="email" required autocomplete="email">
-
-                <label for="dob">Date of Birth </label>
-                <input id="dob" name="dob" type="date" required>
-
-                <label for="boatName">Boat Name</label>
-                <input id="boatName" name="boatName" type="text">
-
-                <label for="comments">Comments</label>
-                <textarea id="comments" name="comments" cols="40" rows="3"></textarea>
-
-                    <label class="full-row checkbox">
-                    <input type="checkbox" name="waiver" required>
-                    I have read and agree to the waiver 
-                    </label>
-
-                <div class="full-row center">
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
-            <img src="istockphoto-1350638793-612x612.jpg" width="300">
-
+          <img
+            src="Wizard2.png"
+            alt=""
+            class="w-full rounded-lg border border-slate-700 object-cover aspect-video bg-slate-800"
+          />
         </div>
-    </body>
-</html>
 
-beep
+        <div class="space-y-3 text-slate-200">
+          <p>
+            "At first I thought that when I saw them walk into the office 3 years ago I figured it was going to be a good day! Until they casted 'No Maidens'. Yeah, HR had a field day with that one. We still can't find Sidney.." - Greg Smith
+          </p>
+          <p>
+            "The Magic? I can deal with it. The sudden Dragon summons? Sure no problem. But I draw the line at taking away our 15 minute breaks!.. Sorry what was this for again? Who are you? Why are you in my house!?" - Steven from accounting I think?
+          </p>
+          <p>
+            "Guys I think we are taking this way to far, I think having a Wizard around is a delightful and educational experience!" - Merlin 
+          </p>
+
+          <div class="mt-3">
+            <h3 class="font-semibold text-sm mb-1">Related Links</h3>
+            <ul class="list-disc list-inside text-sm text-indigo-300">
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Wizard" class="underline">
+                  Wiki Link on Wizards
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=ujz60VEIoBU&list=RDujz60VEIoBU&start_radio=1" class="underline">
+                  Wizard Music
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="consulting" class="fade-in">
+      <h2 class="text-xl font-bold mb-3">
+        Arcane HR Solutions: Wizard-Friendly Workplace Consulting
+      </h2>
+
+      <article class="bg-slate-900 border border-slate-800 rounded-xl p-5 card-hover transition-transform">
+        <h3 class="font-semibold mb-2">
+          Arcane HR Solutions Inc.
+        </h3>
+
+        <dl class="grid md:grid-cols-2 gap-3 text-xs text-slate-300 mb-4">
+          <div>
+            <dt class="font-semibold">Location</dt>
+            <dd>Vancouver Canada</dd>
+          </div>
+          <div>
+            <dt class="font-semibold">Contact</dt>
+            <dd>Wizardsattheworkplace@gmail.com or 555-740-2892</dd>
+          </div>
+        </dl>
+
+        <img
+          src="wizard3.png"
+          class="w-full rounded-lg border border-slate-700 object-cover aspect-video bg-slate-800"
+        />
+      </article>
+    </section>
+
+    <section id="guide" class="fade-in">
+      <h2 class="text-xl font-bold mb-3">
+        Arcane Survival Guide for Coworkers
+      </h2>
+
+<div class="grid md:grid-cols-3 gap-4 text-sm">
+  <article class="bg-slate-900 border border-slate-800 rounded-lg p-4 md:col-span-3">
+    <h3 class="font-semibold mb-2 text-indigo-300">Wizard Types</h3>
+
+    <ol class="list-decimal list-inside space-y-2 text-slate-200">
+      <li>
+        <strong>The Over-Enthusiastic Intern</strong> – Young, eager, and dangerously
+        excited about magic. Will accidentally summon a minor demon while trying to
+        “improve team morale.”
+      </li>
+      <li>
+        <strong>The Absent-Minded Archmage</strong> – Power level: ridiculous. Memory:
+        nearly nonexistent. Often forgets where they put their staff… usually because
+        it’s floating behind them.
+      </li>
+      <li>
+        <strong>The Coffee Conjurer</strong> – Casts Caffeine Surge every hour. Keeps
+        the entire office awake through sheer arcane willpower. Smells like espresso
+        and burnt mana.
+      </li>
+      <li>
+        <strong>The Meeting Teleporter</strong> – Why walk to the conference room when
+        you can rip space-time open? Never uses doors. Scares interns. Interrupts Zoom
+        calls by materializing inside them.
+      </li>
+      <li>
+        <strong>The Chaos Bard Adjacent</strong> – Not technically a wizard… but close
+        enough. Their presence increases the chance of random musical numbers by 300%.
+      </li>
+      <li>
+        <strong>The Hex-Coder</strong> – A software engineer who uses real spells to
+        debug code. Comments in their scripts look like incantations. Sometimes the
+        code literally yells back.
+      </li>
+      <li>
+        <strong>The Prophecy Guy</strong> – Constantly predicts minor things like
+        “you're going to spill that coffee.” Is somehow always right. Won’t explain
+        how they know.
+      </li>
+      <li>
+        <strong>The Crystal-Everything Mage</strong> – Charges crystals constantly.
+        Has “charging rocks” on their desk, in the washroom, in their car, maybe on
+        the roof. Claims productivity boosts of “+3 Charisma” and “+5 PowerPoint
+        Strength.”
+      </li>
+      <li>
+        <strong>The Familiar-Friendly Wizard</strong> – Always accompanied by a magical
+        pet (raven, cat, spectral hamster). HR has repeatedly requested they stop
+        bringing it to all-hands meetings.
+      </li>
+      <li>
+        <strong>The Necromancer With an HR Certificate</strong> – Surprisingly good at
+        administrative tasks. Raises dead paperwork from the shredder to finish
+        projects. Has an “Ask Me About Compliance” mug.
+      </li>
+      <li>
+        <strong>The Time-Loop Analyst</strong> – Keeps saying “We’ve had this meeting
+        before.” They’re right. They’ve already lived this quarter three times.
+      </li>
+      <li>
+        <strong>The Passive-Aggressive Enchanter</strong> – Curses office supplies
+        when upset. Staplers vanish. Pens leak. Printers become hostile and demand
+        tribute.
+      </li>
+    </ol>
+  </article>
+</div>
+
+
